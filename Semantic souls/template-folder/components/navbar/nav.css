@@ -1,0 +1,27 @@
+
+.nav-component {
+    display: none;
+    width: 0%;
+    background-color: white;
+    left: 0;
+    bottom: -50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navigation-link:hover .nav-component {
+    display: block;
+    width: 100%;
+
+ animation: zoom-in 0.3s linear;
+        }
+
+@keyframes zoom-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.90);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

@@ -6,6 +6,8 @@
 
   <!-- Own Css -->
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./components/navbar/nav.css">
+  <link rel="stylesheet" href="./components/hero/hero.css" >
 
   <!-- tailwind css CDN & Custom Class -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -14,10 +16,20 @@
         --color-clifford: #da373d;
         --color-gray-primay: #E2E2E2;
         --color-gray-secondary: #F6F5F8;
+        --color-golden: #b68f35;
+      }
+      @layer utilities {
+        .btn-primary {
+          @apply bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700;
+        }
+        .hero-title {
+          @apply text-4xl font-bold tracking-tight text-gray-800;
+        }
       }
     </style>
 
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
 </head>
 <body>

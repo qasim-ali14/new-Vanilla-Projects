@@ -4,13 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./nav.css">
 </head>
 <body>
-    <h2>navbar</h2>
-    <ul class="flex gap-4 my-2">
-        <li><a href="/" data-link>Home</a></li>
-        <li><a href="/about" data-link>About</a></li>
-        <li><a href="/collections" data-link>Collections</a></li>
-    </ul>
+
+    <nav class="flex gap-4 items-center justify-center py-3 relative container mx-auto">
+        <div class="navigation-link ">
+            <a id="rings" class="hover-effect" href="/collections/bracelet" data-link>Rings</a>
+            <div data-component="./components/navbar/_components/ring.html"></div>
+        </div>
+
+        <div class="navigation-link ">
+        <a id="jewellery" class="hover-effect" href="/collections/bridal-jewellery" data-link>Jewellery</a>
+        <div data-component="./components/navbar/_components/jewellery.html"></div>
+        </div>
+
+        <div class="navigation-link ">
+        <a id="collections" class="hover-effect" href="/collections/earring" data-link>Collections</a>
+        <div data-component="./components/navbar/_components/collections.html"></div>
+        </div>
+
+        <div class="navigation-link ">
+        <a id="bangles" class="hover-effect active-golden" href="/collections/mens-jewellery" data-link>Bangles</a>
+        <div data-component="./components/navbar/_components/bangles.html"></div>
+        </div>
+        
+        <div class="navigation-link ">
+        <a id="new-ins" class="hover-effect" href="/collections/engagement-ring" data-link>New Ins</a>
+        <div data-component="./components/navbar/_components/new-ins.html"></div>
+        </div>
+
+    </nav>
 </body>
 </html>

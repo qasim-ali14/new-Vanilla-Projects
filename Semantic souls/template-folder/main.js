@@ -35,10 +35,44 @@ async function injectComponents(container) {
 }
 
 
+// For drop dwon
+function initializeDropdowns() {
+  document.querySelectorAll('.relative.inline-block.text-left').forEach(dropdown => {
+    const dropdownBtn = dropdown.querySelector('#dropdownButton');
+    const dropdownMenu = dropdown.querySelector('#dropdownMenu');
+
+    if (!dropdownBtn || !dropdownMenu) return;
+
+    dropdownBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdownMenu.classList.toggle('hidden');
+    });
+
+    dropdownMenu.querySelectorAll('li').forEach(item => {
+      item.addEventListener('click', () => {
+        const imgSrc = item.querySelector('img').src;
+        const currency = item.getAttribute('data-value');
+
+        dropdownBtn.querySelector('img').src = imgSrc;
+        dropdownBtn.querySelector('span').textContent = currency;
+        dropdownMenu.classList.add('hidden');
+      });
+    });
+  });
+}
+
+
+// Route configuration
 // Route configuration
 const routes = {
   '/': '/pages/home.html',
   '/about': '/pages/about.html',
+  // Collection routes
+  '/collections/bracelet': '/pages/collections/bracelet.html',
+  '/collections/bridal-jewellery': '/pages/collections/bridal-jewellery.html',
+  '/collections/earring': '/pages/collections/earring.html',
+  '/collections/mens-jewellery': '/pages/collections/mens-jewellery.html',
+  '/collections/engagement-ring': '/pages/collections/engagement-ring.html',
   // Add other routes here
 };
 
@@ -46,7 +80,6 @@ const routes = {
 async function renderPage(path = '/') {
   const app = document.getElementById('app');
   try {
-    // Get the actual file path from our route config
     const pagePath = routes[path] || '/pages/404.html';
     const pageHTML = await loadHTML(pagePath);
     
@@ -55,10 +88,15 @@ async function renderPage(path = '/') {
 
     await injectComponents(tempDiv);
     app.innerHTML = tempDiv.innerHTML;
+    
+    // Initialize dropdowns after components are loaded
+    initializeDropdowns();
 
     // Update active link in navbar
     document.querySelectorAll('[data-link]').forEach(link => {
-      link.classList.toggle('active', link.getAttribute('href') === path);
+      const isActive = link.getAttribute('href') === path;
+      link.classList.toggle('active-golden', isActive);
+      link.classList.toggle('hover-effect', !isActive); // Remove hover-effect if active
     });
   } catch (err) {
     app.innerHTML = `<div class="error">Error: ${err.message}</div>`;
@@ -91,3 +129,7 @@ function init() {
 
 // Start the application
 init();
+
+
+
+

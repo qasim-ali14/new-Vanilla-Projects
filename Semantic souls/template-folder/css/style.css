@@ -5,6 +5,7 @@
   --secondary-color: #8f94fb;
   --text-color: #333;
   --spacing: 1rem;
+  --golden-color: #b68f35;
 }
 
 body {
@@ -14,3 +15,94 @@ body {
   margin: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
+
+.hover-effect, .active-golden {
+    position: relative;
+    margin: 0 30px;
+    padding: 0 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.hover-effect:hover {
+    color: var(--golden-color);
+}
+
+.hover-effect::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 0%;
+    background-image: linear-gradient(
+        to right,
+        var(--golden-color) 0%,
+        #ffd700 50%,
+        var(--golden-color) 100%
+    );
+    transition: all 0.2s linear;
+}
+
+.hover-effect:hover::before {
+    width: 100%;
+}
+
+.active-golden {
+    color: var(--golden-color);
+    font-weight: 500; 
+}
+
+.active-golden::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-image: linear-gradient(
+        to right,
+        var(--golden-color) 0%,
+        #ffd700 50%,
+        var(--golden-color) 100%
+    );
+}
+
+
+
+
+
+/* =========== CART ================== */
+.cart-s-img-div-with-icons:hover img {
+    transform: scale(1.05);
+    rotate: 3deg;
+    transition: all 0.3s linear;
+}
+
+.cart-s-img-div-with-icons .icons {
+
+}
+
+.cart-btn {
+    font-size: 22px;
+    padding: 5px 18px;
+     background-image: linear-gradient(
+        to right,
+        var(--golden-color) 0%,
+        #ffd700 50%,
+        var(--golden-color) 100%
+    );
+}
+
+.cart-btn:hover {
+     background-image: linear-gradient(
+        to right,
+        var(--golden-color) 0%,
+        #ffd700 70%,
+        var(--golden-color) 100%
+    );
+}
