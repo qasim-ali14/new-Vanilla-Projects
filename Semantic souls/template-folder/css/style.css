@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Moon+Dance&display=swap');
+    /*  font-family: "Ancizar Serif", serif; */
+    /*  font-family: "Moon Dance", cursive; */
+
 
 
 :root {
@@ -15,6 +19,15 @@ body {
   margin: 0;
 }
 
+/* utils classes */
+.font-dance {
+    font-family: "Moon Dance", cursive;
+}
+
+.font-ancizar {
+    font-family: "Ancizar Serif", serif;
+}
+
 button {
   cursor: pointer;
 }
@@ -22,8 +35,8 @@ button {
 
 .hover-effect, .active-golden {
     position: relative;
-    margin: 0 30px;
-    padding: 0 10px;
+    /* margin: 0 30px;
+    padding: 0 10px; */
     text-decoration: none;
     color: inherit;
 }
@@ -89,6 +102,7 @@ button {
 
 .cart-btn {
     font-size: 22px;
+    font-family: "Ancizar Serif", serif;
     padding: 5px 18px;
      background-image: linear-gradient(
         to right,

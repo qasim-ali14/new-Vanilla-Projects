@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <title>dt-aurum</title>
 
-  <!-- Own Css -->
+  <!-- Own Css's -->
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./components/navbar/nav.css">
   <link rel="stylesheet" href="./components/hero/hero.css" >
+
+  <!-- Slick Slider -->
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
   <!-- tailwind css CDN & Custom Class -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -17,7 +20,10 @@
         --color-gray-primay: #E2E2E2;
         --color-gray-secondary: #F6F5F8;
         --color-golden: #b68f35;
+
+        
       }
+      
       @layer utilities {
         .btn-primary {
           @apply bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700;
@@ -37,7 +43,8 @@
   <div id="app"> 
     <!-- Page will be loaded here -->  
   </div>
-
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script type="module" src="./main.js"></script>
 </body>
 </html>
