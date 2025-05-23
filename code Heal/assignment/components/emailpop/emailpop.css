@@ -1,0 +1,86 @@
+:root {
+  --primary-color: #4e54c8;
+  --secondary-color: #8f94fb;
+  --text-color: #333;
+  --spacing: 1rem;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  padding: var(--spacing);
+  margin:0;
+}
+   
+
+        .poping {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 999;
+        }
+    
+        .popup {
+          background: white;
+          border-radius: 10px;
+          display: flex;
+          max-width: 700px;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          overflow: hidden;
+        }
+    
+        .popup img {
+          width: 250px;
+          height: auto;
+          object-fit: cover;
+        }
+    
+        .popup-content {
+          padding: 30px;
+          flex: 1;
+          position: relative;
+        }
+    
+        .popup-content h2 {
+          margin-top: 0;
+          font-size: 1.8em;
+        }
+    
+        .popup-content input[type="email"] {
+          width: 60%;
+          padding: 10px;
+          margin-right: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+    
+        .popup-content button {
+          padding: 10px 20px;
+          border: none;
+          background-color: #000;
+          color: #fff;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+    
+        .popup-content .close {
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          font-size: 20px;
+          cursor: pointer;
+        }
+    
+        .popup-content .no-thanks {
+          margin-top: 20px;
+          display: inline-block;
+          color: #000;
+          font-weight: bold;
+          cursor: pointer;
+        }
