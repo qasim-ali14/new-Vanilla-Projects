@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Novana Navbar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="components/navbar/navbar.css">
+</head>
+<body>
+
+  <!-- Promo Banner -->
+  <div class="bg-green-100 text-sm text-center text-gray-800 py-2 px-4 w-full">
+  <p class="animate-marquee whitespace-nowrap overflow-hidden">
+    Flash Sale Weekend. Up to 50% off — 
+    <a href="#" class="text-blue-700 underline ml-1">Learn more</a>
+  </p>
+</div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <!-- Left -->
+    <div class="navbar-left">
+      <select class="dropdown-select">
+        <option>English</option>
+        <option>Urdu</option>
+      </select>
+      <select class="dropdown-select">
+        <option>Pakistan PKR Rs</option>
+        <option>USD $</option>
+      </select>
+    </div>
+    
+     <span class="logo"><img src="https://sanova-demo.myshopify.com/cdn/shop/files/logo_1_140x@2x.png" alt="Logo" class="logo"/><strong>Novana</strong></span>
+
+    
+    <!-- Right -->
+    <div class="navbar-right">
+      <button class="icon-btn"><i class="fas fa-search"></i></button>
+      <button class="icon-btn"><i class="fas fa-user"></i></button>
+      <button class="icon-btn"><i class="fas fa-heart"></i></button>
+      <button class="icon-btn"><i class="fas fa-shopping-bag"></i></button>
+    </div>
+
+    
+
+
+    <!-- Hamburger -->
+    <div class="hamburger" onclick="toggleMobileMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#">Home</a>
+    <a href="#">All Products</a>
+    <a href="#">Skincare</a>
+    <a href="#">Body</a>
+    <a href="#">About Us</a>
+    <a href="#">Blog</a>
+    <a href="#">FAQ</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms</a>
+    <a href="#">Contact</a>
+  </div>
+    <!-- Center -->
+    <div class="navbar-center">
+     
+      <a href="#">Home</a>
+
+      <div class="dropdown">
+        <button>Shop <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#">All Products</a>
+          <a href="#">Skincare</a>
+          <a href="#">Body</a>
+        </div>
+      </div>
+
+      <a href="#">About Us</a>
+
+      <a href="#">Blog</a>
+
+      <div class="dropdown">
+        <button>Pages <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#">FAQ</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+
+      <a href="#">Contact</a>
+    </div>
+
+
+
+    <div class="slider-container">
+        <div class="slide active">
+            <div class="slide-content">
+                <h2 class="animated-text">Slide 1 Title</h2>
+                <p class="animated-text">Some descriptive text for the first slide.</p>
+                <button class="animated-button 
+                       bg-blue-100 
+                       hover:bg-blue-400 
+                       text-black 
+                       font-semibold 
+                       py-3 
+                       px-5 
+                       rounded-md 
+                       text-md
+                       focus:outline-none 
+                       focus:ring-4 
+                       focus:ring-blue-300
+                       dark:focus:ring-blue-800
+                       w-auto sm:w-auto md:text-xl md:py-3 md:px-6">
+            Click Me!
+        </button>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-content">
+                <h2 class="animated-text">Slide 2 Awesome</h2>
+                <p class="animated-text">Engaging content for the second amazing slide.</p>
+                <button class="animated-button 
+                       bg-blue-600 
+                       hover:bg-blue-700 
+                       text-white 
+                       font-semibold 
+                       py-3 
+                       px-8 
+                       rounded-lg 
+                       text-lg
+                       focus:outline-none 
+                       focus:ring-4 
+                       focus:ring-blue-300
+                       dark:focus:ring-blue-800
+                       w-auto sm:w-auto md:text-xl md:py-4 md:px-10">
+            Click Me!
+        </button>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-content">
+                <h2 class="animated-text">Third & Final Slide</h2>
+                <p class="animated-text">Concluding information on this last slide here.</p>
+                <button class="animated-button 
+                       bg-blue-600 
+                       hover:bg-blue-700 
+                       text-white 
+                       font-semibold 
+                       py-3 
+                       px-8 
+                       rounded-lg 
+                       text-lg
+                       focus:outline-none 
+                       focus:ring-4 
+                       focus:ring-blue-300
+                       dark:focus:ring-blue-800
+                       w-auto sm:w-auto md:text-xl md:py-4 md:px-10">
+            Click Me!
+        </button>
+            </div>
+        </div>
+        <div class="flex justify-center items-center min-h-screen w-full p-4">
+
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+
+
+
+
+
+  <script src=".../js/script/js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
