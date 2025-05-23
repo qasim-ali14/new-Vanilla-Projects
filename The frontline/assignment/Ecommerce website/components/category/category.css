@@ -1,0 +1,230 @@
+:root {
+  /* Fonts */
+  --font-family: 'Segoe UI', sans-serif;
+  --font-size-heading: 2rem;
+  --font-size-heading-small: 1.5rem;
+  --font-size-card-title: 1.3rem;
+  --font-size-card-subtitle: 0.95rem;
+  --font-size-button: 1.2rem;
+
+  /* Colors */
+  --color-text: black;
+  --color-overlay: rgba(0, 0, 0, 0.2);
+  --color-shadow: rgba(0, 0, 0, 0.1);
+
+  /* Spacing */
+  --padding-section: 60px 20px;
+  --gap-grid: 25px;
+  --margin-bottom-large: 20px;
+  --margin-top-small: 10px;
+  --padding-button: 5px 10px;
+
+  /* Size */
+  --max-width-container: 2000px;
+  --min-width-card: 300px;
+  --height-card: 300px;
+  --height-card-mobile: 160px;
+
+  /* Others */
+  --box-shadow: 0 2px 6px var(--color-shadow);
+}
+
+/* Global Styles */
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+}
+
+/* Section Container */
+.category-section {
+  padding: var(--padding-section);
+  max-width: var(--max-width-container);
+  margin: auto;
+}
+
+.category-section h2 {
+  font-size: var(--font-size-heading);
+  font-weight: bold;
+  margin-bottom: var(--margin-bottom-large);
+}
+
+/* Heading Row */
+.heading-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--margin-bottom-large);
+}
+
+/* Cards Container */
+.category-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--gap-grid);
+  overflow-x: auto;
+}
+
+/* Card Design */
+.category-card {
+  position: relative;
+  overflow: hidden;
+  min-width: var(--min-width-card);
+  height: var(--height-card);
+  box-shadow: var(--box-shadow);
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Card Info */
+.category-card .info {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  z-index: 2;
+  color: var(--color-text);
+  font-weight: lighter;
+}
+
+.category-card .info h3 {
+  margin: 0;
+  font-size: var(--font-size-card-title);
+  font-weight: lighter;
+}
+
+.category-card .info p {
+  margin: 3px 0 0;
+  font-size: var(--font-size-card-subtitle);
+}
+
+/* Hover Overlay */
+.category-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-overlay);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.category-card:hover::before {
+  opacity: 1;
+}
+
+/* Nav Buttons */
+.nav-buttons {
+  margin-top: var(--margin-top-small);
+  text-align: right;
+}
+
+.nav-buttons button {
+  font-size: var(--font-size-button);
+  padding: var(--padding-button);
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .category-card img {
+    height: var(--height-card-mobile);
+  }
+
+  .category-section h2 {
+    font-size: var(--font-size-heading-small);
+  }
+}
+
+
+/* Gallary*/
+:root {
+  --font-family: 'Segoe UI', sans-serif;
+  --font-size-button: 18px;
+  --font-size-label: 30px;
+
+  --color-text: #000;
+  --color-label-bg: rgba(255, 255, 255, 0.9);
+
+  --shadow-color: rgba(0, 0, 0, 0.15);
+  --gap-container: 20px;
+
+  --image-width: 450px;
+  --image-height: 380px;
+  --card-border-radius: 8px;
+}
+
+/* Basic Styling */
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  display: flex;
+  gap: var(--gap-container);
+  padding: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image-card {
+  position: relative;
+  width: var(--image-width);
+  height: var(--image-height);
+  overflow: hidden;
+  border-radius: var(--card-border-radius);
+  box-shadow: 0 0 6px var(--shadow-color);
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.image-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Top-right label */
+.label {
+  position: absolute;
+  top: 12px;
+  left: 12px; /* changed from right to left */
+  background-color: transparent; /* removed white background */
+  color: var(--color-text);
+  padding: 5px 10px;
+  font-size: var(--font-size-label);
+  font-weight: bold;
+  z-index: 2;
+}
+
+/* Bottom-right Shop Now */
+.shop-button {
+  position: absolute;
+  bottom: 40px;
+  left: 30px; /* right se left kar diya */
+  background: none;
+  color: var(--color-text);
+  padding: 0;
+  font-size: var(--font-size-button);
+  font-weight: lighter;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+

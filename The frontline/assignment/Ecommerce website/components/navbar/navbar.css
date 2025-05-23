@@ -1,0 +1,146 @@
+/* -------------------- Default/Desktop View -------------------- */
+
+/* Hide hamburger icon by default (only for desktop) */
+.menu-toggle,
+.mobile-left {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding-md) var(--padding-lg);
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--navbar-bg);
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.top-left select {
+  margin-right: 15px;
+  padding: var(--padding-sm);
+  border: 1px solid #ccc;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+}
+
+.logo img {
+  max-width: 280px;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  position: relative;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.icon sup {
+  font-size: 10px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--icon-badge-bg);
+  color: var(--icon-badge-color);
+  border-radius: 50%;
+  padding: 2px 5px;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  margin: 0;
+  gap: var(--nav-gap);
+  background-color: var(--navbar-bg);
+  font-size: var(--font-size-md);
+}
+
+.nav-links ul li {
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-links ul li:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: var(--hover-underline-color);
+  bottom: -5px;
+  left: 0;
+}
+
+/* -------------------- Mobile View -------------------- */
+@media (max-width: 768px) {
+  .top-left {
+    display: none;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+  }
+
+  .mobile-left {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 26px;
+    cursor: pointer;
+  }
+
+  .logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo img {
+    max-width: 160px;
+  }
+
+  .icons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #ccc;
+  }
+
+  .nav-links.show {
+    display: block;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    padding: 10px 20px;
+    margin: 0;
+    list-style: none;
+  }
+
+  .nav-links ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+}
