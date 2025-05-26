@@ -1,0 +1,76 @@
+:root {
+  --footer-bg-color: #f9f9f9;
+  --footer-text-color: #6c757d;
+  --footer-heading-color: #555;
+  --footer-link-color: #6c757d;
+  --footer-link-hover-color: #007bff;
+}
+
+/* Footer Background and Typography */
+footer {
+  background-color: var(--footer-bg-color);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: var(--footer-text-color);
+}
+
+footer h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--footer-heading-color);
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: var(--footer-link-color);
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--footer-link-hover-color);
+  text-decoration: none;
+}
+
+/* Icon Styling */
+footer i {
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+
+/* List Styling */
+footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Image Styling */
+footer img {
+  max-width: 70px;
+  border-radius: 5px;
+}
+
+/* Recent Posts Text */
+footer .recent-post h6 {
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+footer .recent-post p {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Bottom Copyright */
+footer .copyright {
+  font-size: 0.85rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  footer h5 {
+    margin-top: 1rem;
+  }
+}

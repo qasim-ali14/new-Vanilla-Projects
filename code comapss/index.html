@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soul Medic</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstraps Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/home.css" />
+  </head>
+  <body>
+    <!-- Navbar placeholder -->
+    <div id="navbar"></div>
+
+    <!-- Carousal / Slider -->
+
+    <div
+      id="medicalCarousel"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="3000"
+    >
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div
+            class="carousel-background"
+            style="background-image: url('./Images/slider-bg-1.jpg')"
+          ></div>
+          <div class="container carousel-container">
+            <div class="row align-items-center w-100">
+              <div class="col-md-6 carousel-content carousel-text">
+                <p>
+                  <i class="bi bi-truck"></i> 2 AWESOME SLIDERS ($15 EACH) FREE
+                </p>
+                <p><i class="bi bi-hdd-fill"></i> POWERFUL BACKEND FEATURES</p>
+                <p>
+                  <i class="bi bi-briefcase-medical-fill"></i> AWESOME SUPPORT
+                </p>
+                <p><i class="bi bi-laptop"></i> COMPLETE SUPPORT</p>
+              </div>
+              <div class="col-md-6 text-center">
+                <img
+                  src="./Images/slider1-image.png"
+                  class="img-fluid"
+                  alt="Doctor"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div
+            class="carousel-background"
+            style="background-image: url('./Images/slider-bg.jpg')"
+          ></div>
+          <div class="container carousel-container">
+            <div class="row align-items-center w-100">
+              <div class="col-md-6 text-center">
+                <img
+                  src="./Images/slider2-image.png"
+                  class="img-fluid"
+                  alt="Doctor 2"
+                />
+              </div>
+              <div class="col-md-6 carousel-content carousel-text">
+                <p><i class="bi bi-shield-plus"></i> FULLY SECURED SYSTEM</p>
+                <p><i class="bi bi-cpu-fill"></i> MODERN TECHNOLOGIES</p>
+                <p><i class="bi bi-headset"></i> 24/7 CUSTOMER SUPPORT</p>
+                <p>
+                  <i class="bi bi-bar-chart-line-fill"></i> PERFORMANCE
+                  ANALYTICS
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div
+            class="carousel-background"
+            style="background-image: url('./Images/slider-bg-3.jpg')"
+          ></div>
+          <div class="container carousel-container">
+            <div class="row align-items-center w-100">
+              <div class="col-md-6 carousel-content carousel-text">
+                <p><i class="bi bi-activity"></i> ADVANCED HEALTH MONITORING</p>
+                <p>
+                  <i class="bi bi-clipboard-check-fill"></i> EASY RECORD
+                  TRACKING
+                </p>
+                <p><i class="bi bi-bug-fill"></i> BUG-FREE EXPERIENCE</p>
+                <p><i class="bi bi-person-video3"></i> TELEMEDICINE READY</p>
+              </div>
+              <div class="col-md-6 text-center">
+                <img
+                  src="./Images/slider3-image.png"
+                  class="img-fluid"
+                  alt="Doctor 3"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    <!-- Cards Section -->
+
+    <div class="container-fluid my-5">
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="row w-100 justify-content-center align-items-center">
+          <div
+            class="card col-lg-4 d-flex flex-column align-items-center text-center"
+          >
+            <div
+              class="d-flex justify-content-center align-items-center rounded-circle icon"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="#4bbcd7"
+                class="bi bi-h-square-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm9 4.002V12H9.67V8.455H6.33V12H5V4.002h1.33v3.322h3.34V4.002z"
+                />
+              </svg>
+            </div>
+            <h5>Well Trained Professionals</h5>
+            <div class="line"></div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+              quis placerat urna. Nulla nulla diam, adipiscing non ornare non,
+              commodo
+            </p>
+          </div>
+          <div
+            class="card col-lg-4 d-flex flex-column align-items-center text-center"
+          >
+            <div
+              class="d-flex justify-content-center align-items-center rounded-circle icon"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="#4bbcd7"
+                class="bi bi-umbrella"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0a.5.5 0 0 1 .5.5v.514C12.625 1.238 16 4.22 16 8c0 0 0 .5-.5.5-.149 0-.352-.145-.352-.145l-.004-.004-.025-.023a3.5 3.5 0 0 0-.555-.394A3.17 3.17 0 0 0 13 7.5c-.638 0-1.178.213-1.564.434a3.5 3.5 0 0 0-.555.394l-.025.023-.003.003s-.204.146-.353.146-.352-.145-.352-.145l-.004-.004-.025-.023a3.5 3.5 0 0 0-.555-.394 3.3 3.3 0 0 0-1.064-.39V13.5H8h.5v.039l-.005.083a3 3 0 0 1-.298 1.102 2.26 2.26 0 0 1-.763.88C7.06 15.851 6.587 16 6 16s-1.061-.148-1.434-.396a2.26 2.26 0 0 1-.763-.88 3 3 0 0 1-.302-1.185v-.025l-.001-.009v-.003s0-.002.5-.002h-.5V13a.5.5 0 0 1 1 0v.506l.003.044a2 2 0 0 0 .195.726c.095.191.23.367.423.495.19.127.466.229.879.229s.689-.102.879-.229c.193-.128.328-.304.424-.495a2 2 0 0 0 .197-.77V7.544a3.3 3.3 0 0 0-1.064.39 3.5 3.5 0 0 0-.58.417l-.004.004S5.65 8.5 5.5 8.5s-.352-.145-.352-.145l-.004-.004a3.5 3.5 0 0 0-.58-.417A3.17 3.17 0 0 0 3 7.5c-.638 0-1.177.213-1.564.434a3.5 3.5 0 0 0-.58.417l-.004.004S.65 8.5.5 8.5C0 8.5 0 8 0 8c0-3.78 3.375-6.762 7.5-6.986V.5A.5.5 0 0 1 8 0M6.577 2.123c-2.833.5-4.99 2.458-5.474 4.854A4.1 4.1 0 0 1 3 6.5c.806 0 1.48.25 1.962.511a9.7 9.7 0 0 1 .344-2.358c.242-.868.64-1.765 1.271-2.53m-.615 4.93A4.16 4.16 0 0 1 8 6.5a4.16 4.16 0 0 1 2.038.553 8.7 8.7 0 0 0-.307-2.13C9.434 3.858 8.898 2.83 8 2.117c-.898.712-1.434 1.74-1.731 2.804a8.7 8.7 0 0 0-.307 2.131zm3.46-4.93c.631.765 1.03 1.662 1.272 2.53.233.833.328 1.66.344 2.358A4.14 4.14 0 0 1 13 6.5c.77 0 1.42.23 1.897.477-.484-2.396-2.641-4.355-5.474-4.854z"
+                />
+              </svg>
+            </div>
+            <h5>Best Care Taking</h5>
+            <div class="line"></div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+              quis placerat urna. Nulla nulla diam, adipiscing non ornare non,
+              commodo
+            </p>
+          </div>
+          <div
+            class="card col-lg-4 d-flex flex-column align-items-center text-center"
+          >
+            <div
+              class="d-flex justify-content-center align-items-center rounded-circle icon"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="#4bbcd7"
+                class="bi bi-shield-shaded"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 14.933a1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"
+                />
+              </svg>
+            </div>
+            <h5>Advanced Technology</h5>
+            <div class="line"></div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+              quis placerat urna. Nulla nulla diam, adipiscing non ornare non,
+              commodo
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+    <!-- Purchase section -->
+
+    <div class="container tech my-5">
+  <div class="tech-section left-border d-flex flex-column flex-md-row justify-content-around align-items-start align-items-md-center">
+    <div class="mb-3 mb-md-0">
+      <h4 class="fw-bold mb-2">OUR TECHNOLOGICAL SERVICES HAS BEEN IMPROVED VASTLY</h4>
+      <p class="mb-0">Come Experience the real life situations of saving life</p>
+    </div>
+    <div>
+      <a href="#" class="purchase-btn"><span>PURCHASE NOW</span></a>
+    </div>
+  </div>
+</div>
+
+    <!-- our doctors -->
+         <div class="container my-5">
+  <div class="row">
+    <!-- Our Doctors Section -->
+    <div class="col-md-6">
+      <h3 class="mb-4">Our Doctors</h3>
+
+      <div class="d-flex mb-4">
+        <img src="Images/team2.jpg" class="rounded-circle border border-3 border-info me-3" width="80" height="80" alt="Doctor 1">
+        <div>
+          <div class="bg-light p-2 rounded">
+            <i class="fa fa-user-md text-info me-2"></i>
+            <strong>Design Themes</strong>, MBBS
+          </div>
+          <p class="mb-1 mt-2">Saleem naijar kaasram eerie can be disbursed in the wofl like of a fox that is her thing smaoasa.</p>
+          <hr class="my-2">
+          <small class="text-muted">
+            Gastroenterologist<br>
+            Email: <a href="#" class="text-info">yourname@domain.com</a>
+          </small>
+        </div>
+      </div>
+
+      <div class="d-flex">
+        <img src="Images/team4.jpg" class="rounded-circle border border-3 border-info me-3" width="80" height="80" alt="Doctor 2">
+        <div>
+          <div class="bg-light p-2 rounded">
+            <i class="fa fa-user-md text-info me-2"></i>
+            <strong>Design Themes</strong>, MBBS
+          </div>
+          <p class="mb-1 mt-2">Saleem naijar kaasram eerie can be disbursed in the wofl like of a fox that is her thing smaoasa.</p>
+          <hr class="my-2">
+          <small class="text-muted">
+            Gastroenterologist<br>
+            Email: <a href="#" class="text-info">yourname@domain.com</a>
+          </small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Benefits Section -->
+    <div class="col-md-6">
+      <h3 class="mb-4">Benefits from Soul Medic</h3>
+
+      <ul class="nav nav-tabs" id="benefitsTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="unlimited-tab" data-bs-toggle="tab" data-bs-target="#unlimited" type="button" role="tab">Unlimited Skins</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="awesome-tab" data-bs-toggle="tab" data-bs-target="#awesome" type="button" role="tab">Awesome UI</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="elegant-tab" data-bs-toggle="tab" data-bs-target="#elegant" type="button" role="tab">Elegant Design</button>
+        </li>
+      </ul>
+
+      <div class="tab-content p-3 border border-top-0" id="benefitsTabContent">
+        <div class="tab-pane fade show active" id="unlimited" role="tabpanel">
+          Praesent dolor quam, tincidunt in sollicitudin sit amet. Morbi euismod diam eu arcu volutpat ut adipiscing sem auctor. Vivamus adipiscing lobortis sagittis. Nullam tempus mauris dolor, ac malesuada arcu.
+
+Praesent dolor quam, tincidunt in sollicitudin sit amet, volutpat sed velit. Nullam non neque ipsum.
+
+Previous Medical History
+Enlisted Previous Numbers
+Discussion with Parents
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        </div>
+        <div class="tab-pane fade" id="awesome" role="tabpanel">
+          UI that attracts, engages and converts. Created with users in mind and delivers stunning visual experience.
+        </div>
+        <div class="tab-pane fade" id="elegant" role="tabpanel">
+          Minimal yet impactful design that conveys elegance, trust, and professionalism.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <!-- medical plans -->
+
+
+    <h4>Medical Plans</h4>
+
+    <div class="plans-container">
+      <div class="plan">
+        <h3>BASIC PLAN</h3>
+        <div class="price"><span>$40</span>/Month</div>
+        <ul>
+          <li>5 Departments</li>
+          <li>30 Facilities & Tests</li>
+          <li>Organ Check 2 Times a Year</li>
+          <li>Body Check 2 Times a Year</li>
+          <li>Junior Doctors</li>
+        </ul>
+        <button>BUY NOW</button>
+      </div>
+
+      <div class="plan highlighted">
+        <h3>MEDI PLUS</h3>
+        <div class="price"><span>$60</span>/Month</div>
+        <ul>
+          <li>10 Departments</li>
+          <li>50 Facilities & Tests</li>
+          <li>Organ Check 2 Times a Year</li>
+          <li>Body Check 2 Times a Year</li>
+          <li>Junior Doctors</li>
+        </ul>
+        <button>BUY NOW</button>
+      </div>
+
+      <div class="plan">
+        <h3>MEDI CARE</h3>
+        <div class="price"><span>$80</span>/Month</div>
+        <ul>
+          <li>15 Departments</li>
+          <li>60 Facilities & Tests</li>
+          <li>Organ Check 2 Times a Year</li>
+          <li>Body Check 2 Times a Year</li>
+          <li>Junior Doctors</li>
+        </ul>
+        <button>BUY NOW</button>
+      </div>
+
+      <div class="plan">
+        <h3>MEDI COMPLETE</h3>
+        <div class="price"><span>$100</span>/Month</div>
+        <ul>
+          <li>20 Departments</li>
+          <li>80 Facilities & Tests</li>
+          <li>Organ Check 2 Times a Year</li>
+          <li>Body Check 2 Times a Year</li>
+          <li>Junior Doctors</li>
+        </ul>
+        <button>BUY NOW</button>
+      </div>
+    </div>
+
+    <!-- Footer placeholder -->
+    <div id="footer"></div>
+
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS File Link -->
+    <script src="JS/load-partials.js"></script>
+    <script src="JS/home.js"></script>
+  </body>
+</html>
