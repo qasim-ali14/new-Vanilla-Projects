@@ -1,4 +1,10 @@
 // main.js
+import initializeSlick from "./components/logo-section/secript.js";
+import initializeSlickSlider2 from './components/slider2/slider2.js';
+import initializeReviewSlider from './components/review/review.js'
+// myAlert("guten tag!")
+
+
 
 // Base URL for all requests
 const BASE_URL = window.location.origin;
@@ -89,8 +95,17 @@ async function renderPage(path = '/') {
     await injectComponents(tempDiv);
     app.innerHTML = tempDiv.innerHTML;
     
-    // Initialize dropdowns after components are loaded
+    await injectComponents(tempDiv);
+    app.innerHTML = tempDiv.innerHTML;
+
+    // Initialize dropdowns
     initializeDropdowns();
+
+    // 🆕 Initialize slick (after logos are in the DOM)
+    initializeSlick();
+    initializeSlickSlider2();
+    initializeReviewSlider()
+
 
     // Update active link in navbar
     document.querySelectorAll('[data-link]').forEach(link => {

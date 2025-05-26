@@ -9,6 +9,8 @@
   --secondary-color: #8f94fb;
   --text-color: #333;
   --spacing: 1rem;
+  --color-gray-primay: #E2E2E2;
+  --color-gray-secondary: #F6F5F8;
   --golden-color: #b68f35;
 }
 
@@ -19,6 +21,9 @@ body {
   margin: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+}
 /* utils classes */
 .font-dance {
     font-family: "Moon Dance", cursive;
